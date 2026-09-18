@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+venv/
+database/attendance.db
+data/encodings_cache.pkl
+data/attendance_logs/*.csv
+data/attendance_logs/*.png
+system.log
