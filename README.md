@@ -69,7 +69,7 @@ facesys/
 ## Installation & Setup
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/alcyoneus24/Smart-Face-Recognition-Attendance-System.git
 cd facesys
 python3 -m venv venv
 source venv/bin/activate        # on Windows: venv\Scripts\activate
@@ -84,25 +84,30 @@ pip install -r requirements.txt
 ## Usage
 
 **1. Enroll a student** (provide 1–3 clear frontal photos):
+
 ```bash
 python main.py enroll --name "Jane Doe" --roll CS101 --images photo1.jpg photo2.jpg
 ```
 
 **2. Run the live attendance session:**
+
 ```bash
 python main.py run
 ```
+
 A window opens showing the webcam feed with bounding boxes, recognised
 names, and a `LIVE`/`...` liveness tag. Press **q** to stop. Attendance is
 marked automatically once a face is recognised **and** confirmed live.
 
 **3. Generate reports:**
+
 ```bash
 python main.py report --today      # today's attendance as CSV
 python main.py report --summary    # overall summary CSV + bar chart
 ```
 
 **4. List enrolled students:**
+
 ```bash
 python main.py list-students
 ```
