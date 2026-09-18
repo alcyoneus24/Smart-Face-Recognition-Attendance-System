@@ -6,3 +6,5 @@ data/encodings_cache.pkl
 data/attendance_logs/*.csv
 data/attendance_logs/*.png
 system.log
+data/enrollment/
+data/known_faces/
